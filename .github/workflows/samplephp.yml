@@ -1,4 +1,4 @@
-name: Deploy to EC2
+name: Php Deployment
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Execute remote SSH commands using password
+    - name: Remote via SSH by password
       uses: appleboy/ssh-action@v0.1.3
       with:
         host: ${{ secrets.HOST }}
